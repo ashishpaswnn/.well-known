@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Opening BlueBazaar App...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    window.onload = function() {
+      var fallback = "https://play.google.com/store/apps/details?id=com.ASHU.DigitalStore";
+      var deeplink = "intent://user?id=123#Intent;scheme=https;package=com.ASHU.DigitalStore;end";
+
+      window.location.replace(deeplink);
+
+      setTimeout(function() {
+        window.location.replace(fallback);
+      }, 2000);
+    };
+  </script>
+</head>
+<body>
+  <p>Opening BlueBazaar App...</p>
+</body>
+</html>
